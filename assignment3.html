@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1
+      style="
+        color: maroon;
+        position: absolute;
+        margin-top: 10%;
+        margin-left: 30%;
+      "
+    >
+      Arithmetic Operations Output
+    </h1>
+    <div
+      id="results"
+      style="position: absolute; margin-top: 20%; margin-left: 40%"
+    >
+       
+    </div>
+
+    <script>
+      let num1 = 20;
+      let num2 = 3;
+      let sum = num1 + num2;
+      let difference = num1 - num2;
+      let product = num1 * num2;
+      let quotient = num1 / num2;
+
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML =
+        "<p>Sum: " +
+        sum +
+        "</p>" +
+        "<p>Difference: " +
+        difference +
+        "</p>" +
+        "<p>Product: " +
+        product +
+        "</p>" +
+        "<p>Quotient: " +
+        quotient +
+        "</p>";
+    </script>
+  </body>
+</html>
